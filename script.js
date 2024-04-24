@@ -1,8 +1,12 @@
 function minDate(dates) {
   //write you code here
-	dates.sort(function(a,b) {
-		return a-b)
-	}
+	let minDate=dates[0];
+	for(let i=1;i<dates.length;i++)
+		{
+			if(dates[i]<minDate)
+				minDate=dates[i];
+		}
+	return minDate;
 }
 
 // Do not change the code
